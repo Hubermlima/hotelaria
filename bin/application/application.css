@@ -1,0 +1,158 @@
+/* JavaFX CSS */
+
+/* CSS MenuBar */
+
+#novo > .label{
+    -fx-graphic: url("../../Imagens/novo.png");
+}
+#novo .accelerator-text{
+    -fx-graphic: none;
+}
+
+#abrir > .label{
+    -fx-graphic: url("../../Imagens/open.png");
+}
+#abrir .accelerator-text{
+    -fx-graphic: none;
+}
+
+#salvar > .label{
+    -fx-graphic: url("../../Imagens/save.png");
+}
+#salvar .accelerator-text{
+    -fx-graphic: none;
+}
+
+#excluir > .label{
+    -fx-graphic: url("../../Imagens/excluir.png");
+}
+#excluir .accelerator-text{
+    -fx-graphic: none;
+}
+
+#imprimir > .label{
+    -fx-graphic: url("../../Imagens/printer.png");
+}
+#imprimir .accelerator-text{
+    -fx-graphic: none;
+}
+
+#imagemCategoria > .ImageView{
+	-fx-graphic: url("../../Imagens/imagemCategoria.png");
+}
+
+.btNew  {
+	-fx-graphic: url("../../Imagens/novo2.png");
+}
+
+.btAtualizar  {
+	-fx-graphic: url("../../Imagens/atualiza.png");
+}
+.btCancelar  {
+	-fx-graphic: url("../../Imagens/cancel.png");
+}
+.btExcluir  {
+	-fx-graphic: url("../../Imagens/lixo.png");
+}
+.textFieldPesquisa {
+  -fx-background-image:url("../../Imagens/pesquisar.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: right center;
+ 
+}
+
+.titled-pane 
+{
+-fx-skin: "com.sun.javafx.scene.control.skin.TitledPaneSkin";    
+-fx-text-fill: -fx-text-base-color;
+}
+.titled-pane:focused 
+{
+-fx-text-fill: white;
+}
+.titled-pane > .title 
+{
+-fx-background-color: -fx-box-border, -fx-inner-border, -fx-body-color;
+-fx-background-insets: 0, 1, 2;
+-fx-background-radius: 3 3 0 0, 3 3 0 0, 3 3 0 0;
+-fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+}
+
+.titled-pane:focused > .title 
+{
+-fx-color: -fx-focus-color;
+}
+
+.titled-pane > .title > .arrow-button 
+{
+-fx-background-color: null;
+-fx-background-insets: 0;
+-fx-background-radius: 0;
+-fx-padding: 0.0em 0.25em 0.0em 0.0em; /* 0 3 0 0 */
+}
+
+.titled-pane > .title > .arrow-button .arrow 
+{
+-fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+-fx-background-insets: 1 0 -1 0, 0;
+-fx-padding: 0.25em 0.3125em 0.25em 0.3125em; /* 3 3.75 3 3.75 */
+-fx-shape: "M 0 0 h 7 l -3.5 4 z";
+}
+
+.titled-pane:collapsed > .title > .arrow-button .arrow 
+{
+-fx-rotate: -90;
+}
+
+.titled-pane > *.content 
+{
+-fx-background-color:
+-fx-box-border,
+linear-gradient(to bottom, derive(-fx-color,-02%), derive(-fx-color,65%) 12%,      derive(-fx-color,23%) 88%, derive(-fx-color,50%) 99%, -fx-box-border);
+-fx-background-insets: 0, 0 1 1 1;
+-fx-padding: 0.167em;
+ }
+
+.titled-pane:focused > .title > .arrow-button .arrow 
+{
+-fx-background-color: white;
+}
+.paneLogin {
+	-fx-background-color: black;
+}
+.inputSectionn {
+    -fx-background-color : #E1F5FE;
+    }
+ .buttonLogin {
+    -fx-background-color : #29B6F6;
+    -fx-text-fill        : #E1F5FE;
+    -fx-font-weight      : 900;
+    }   
+.buttonLogin:hover {
+    -fx-background-color : #01579B;
+    }    
+.titleLogin {
+    -fx-text-fill   : #01579B;
+    -fx-font-weight : bolder;
+    -fx-font-size   : 14px;
+    }
+.alertaLogin {
+    -fx-fill : #0277BD;
+    }    
+.combo-box-base {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, white;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+}
+.nextButton {
+	-fx-background-radius: 5em;
+	-fx-graphic: url("../../Imagens/icons8-direita-16.png");
+}
+.previousButton {
+	-fx-background-radius: 1em;
+	-fx-graphic: url("../../Imagens/icons8-esquerda-16.png");
+}    
+#verificarDisponibilidade {
+	-fx-background-radius: 0.5em;
+	-fx-graphic: url("../../Imagens/icons8-busca-avançada-32.png");
+}

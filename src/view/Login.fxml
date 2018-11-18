@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerLogin">
+   <center>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView blendMode="DARKEN" fitHeight="102.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets left="200.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../../Imagens/trump_400x400.jpg" />
+               </image></ImageView>
+            <Label fx:id="labelTitulo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="40.0" styleClass="titleLogin" text="Login">
+               <VBox.margin>
+                  <Insets left="235.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Label">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="textFieldLogin" prefHeight="26.0" prefWidth="358.0">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Label">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Label>
+            <PasswordField fx:id="textFieldSenha">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </PasswordField>
+            <CheckBox mnemonicParsing="false" text="Lembre-me">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="15.0" />
+               </VBox.margin>
+            </CheckBox>
+            <Button fx:id="buttonLogin" styleClass="buttonLogin" mnemonicParsing="false" onAction="#onActionLogin" prefHeight="32.0" prefWidth="407.0" text="Login">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="buttonRegistrar" styleClass="buttonLogin" mnemonicParsing="false" onAction="#onActionRegistrar" prefHeight="32.0" prefWidth="406.0" text="Registrar">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="labelAviso" text="Aviso" visible="false" styleClass="alertaLogin">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
